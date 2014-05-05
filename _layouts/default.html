@@ -9,6 +9,9 @@
         <!-- Bootstrap -->
         <link href="/css/bootstrap.min.css" rel="stylesheet">
 
+        <!-- Font Awesome -->
+        <link href="/css/font-awesome.min.css" rel="stylesheet">
+
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 
@@ -46,17 +49,37 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">{{ site.name }}</a>
+              <a class="navbar-brand rockwell rockwell-big" href="/">{{ site.name }}</a>
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/code">Code</a></li>
-                <li><a href="/music">Music</a></li>
+                {% if page.title == "Noah Dayan" %}
+                <li class="active"><a href="/"><span class="text-primary rockwell"><i class="fa fa-home fa-fw"></i> Home</span></a></li>
+                {% else %}
+                <li><a href="/"><span class="rockwell"><i class="fa fa-home fa-fw"></i> Home</span></a></li>
+                {% endif %}
+                {% if page.title == "About" %}
+                <li class="active"><a href="/about"><span class="text-danger rockwell"><i class="fa fa-info fa-fw"></i> About</span></a></li>
+                {% else %}
+                <li><a href="/about"><span class="rockwell"><i class="fa fa-info fa-fw"></i> About</span></a></li>
+                {% endif %}
+                {% if page.title == "Code" %}
+                <li class="active"><a href="/code"><span class="text-warning rockwell"><i class="fa fa-terminal fa-fw"></i> Code</span></a></li>
+                {% else %}
+                <li><a href="/code"><span class="rockwell"><i class="fa fa-terminal fa-fw"></i> Code</span></a></li>
+                {% endif %}
+                {% if page.title == "Music" %}
+                <li class="active"><a href="/music"><span class="text-success rockwell"><i class="fa fa-music fa-fw"></i> Music</span></a></li>
+                {% else %}
+                <li><a href="/music"><span class="rockwell"><i class="fa fa-music fa-fw"></i> Music</span></a></li>
+                {% endif %}
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="/contact">Contact</a></li>
+                {% if page.title == "Contact" %}
+                <li class="active"><a href="/contact"><span class="text-info rockwell"><i class="fa fa-envelope fa-fw"></i> Contact</span></a></li>
+                {% else %}
+                <li><a href="/contact"><span class="rockwell"><i class="fa fa-envelope fa-fw"></i> Contact</span></a></li>
+                {% endif %}
               </ul>
             </div><!--/.nav-collapse -->
           </div>
@@ -69,7 +92,7 @@
           <div class="footer">
             <div class="links">
 
-              <dl class="dl-horizontal">
+              <dl class="dl-horizontal futura">
                 <dt>Github</dt>
                 <dd><a href="https://github.com/noahdayan">github.com/noahdayan</a></dd>
                 <dt>Soundcloud</dt>

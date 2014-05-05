@@ -8,30 +8,28 @@ body {
   padding-top: 60px;
 }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
+.rockwell {
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
 
+.rockwell-big {
+	font-size: x-large;
+}
 
+.futura {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
 
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
+.courier {
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.helvetica {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 .footer {
-  border-top: 4px solid #eee;
+  border-top: 2px solid #eee;
   margin-top: 2em;
   padding-top: 1em;
 }
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-
-
