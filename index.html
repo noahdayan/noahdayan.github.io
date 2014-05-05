@@ -4,7 +4,9 @@ title: Noah Dayan
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <div class="page-header">
+    <h1>News</h1>
+  </div>
   <ul class="fa-ul">
     {% for post in site.posts %}
       <li><i class="fa-li fa fa-angle-right"></i><span class="courier">{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
