@@ -59,24 +59,24 @@
                 <li><a href="/"><span class="rockwell"><i class="fa fa-home fa-fw"></i> Home</span></a></li>
                 {% endif %}
                 {% if page.title == "About" %}
-                <li class="active"><a href="/about"><span class="text-danger rockwell"><i class="fa fa-info fa-fw"></i> About</span></a></li>
+                <li class="active"><a href="/about"><span class="text-primary rockwell"><i class="fa fa-info fa-fw"></i> About</span></a></li>
                 {% else %}
                 <li><a href="/about"><span class="rockwell"><i class="fa fa-info fa-fw"></i> About</span></a></li>
                 {% endif %}
                 {% if page.title == "Code" %}
-                <li class="active"><a href="/code"><span class="text-warning rockwell"><i class="fa fa-terminal fa-fw"></i> Code</span></a></li>
+                <li class="active"><a href="/code"><span class="text-primary rockwell"><i class="fa fa-terminal fa-fw"></i> Code</span></a></li>
                 {% else %}
                 <li><a href="/code"><span class="rockwell"><i class="fa fa-terminal fa-fw"></i> Code</span></a></li>
                 {% endif %}
                 {% if page.title == "Music" %}
-                <li class="active"><a href="/music"><span class="text-success rockwell"><i class="fa fa-music fa-fw"></i> Music</span></a></li>
+                <li class="active"><a href="/music"><span class="text-primary rockwell"><i class="fa fa-music fa-fw"></i> Music</span></a></li>
                 {% else %}
                 <li><a href="/music"><span class="rockwell"><i class="fa fa-music fa-fw"></i> Music</span></a></li>
                 {% endif %}
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 {% if page.title == "Contact" %}
-                <li class="active"><a href="/contact"><span class="text-info rockwell"><i class="fa fa-envelope fa-fw"></i> Contact</span></a></li>
+                <li class="active"><a href="/contact"><span class="text-primary rockwell"><i class="fa fa-envelope fa-fw"></i> Contact</span></a></li>
                 {% else %}
                 <li><a href="/contact"><span class="rockwell"><i class="fa fa-envelope fa-fw"></i> Contact</span></a></li>
                 {% endif %}
@@ -85,12 +85,12 @@
           </div>
         </div>
 
+        {{ content }}
+
         <div class="container">
 
-          {{ content }}
-
           <div class="footer">
-
+            
             <div class="links">
               <dl class="dl-horizontal futura">
                 <dt>Github</dt>

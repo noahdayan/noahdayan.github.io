@@ -4,12 +4,55 @@ title: Noah Dayan
 ---
 
 <div id="home">
-  <div class="page-header">
-    <h1>News</h1>
-  </div>
-  <ul class="fa-ul">
-    {% for post in site.posts %}
-      <li><i class="fa-li fa fa-angle-right"></i><span class="courier">{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+	<div id="project-carousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	    <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#project-carousel" data-slide-to="1"></li>
+	    <li data-target="#project-carousel" data-slide-to="2"></li>
+	  </ol>
+
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <img src="/img/Portrait.jpg" alt="item1" width="200" class="center-block">
+	      <div class="carousel-caption">
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="/img/Portrait.jpg" alt="item2" width="200" class="center-block">
+	      <div class="carousel-caption">
+	      </div>
+	    </div>
+	    <div class="item">
+	      <img src="/img/Portrait.jpg" alt="item3" width="200" class="center-block">
+	      <div class="carousel-caption">
+	      </div>
+	    </div>
+	  </div>
+
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#project-carousel" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" href="#project-carousel" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	  </a>
+	</div>
+
+	<div class="container">
+
+		<div class="page-header">
+			<h1 class="rockwell">News</h1>
+		</div>
+		
+		<ul class="fa-ul">
+		{% for post in site.posts %}
+			<li><i class="fa-li fa fa-angle-right"></i><span class="courier">{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+		</ul>
+
+	</div>
+
 </div>
