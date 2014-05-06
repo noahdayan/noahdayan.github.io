@@ -24,6 +24,10 @@ body {
 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
+.logo {
+	margin-top: -0.5em;
+}
+
 .footer {
   border-top: 1px solid #eee;
   margin-top: 1em;
