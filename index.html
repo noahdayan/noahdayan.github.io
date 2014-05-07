@@ -18,7 +18,7 @@ title: Noah Dayan
 	  <div class="carousel-inner">
 	    <div class="item active">
 	      <img src="/img/shine.jpg" alt="shine" width="800" class="center-block">
-	      <div class="carousel-caption">
+	      <div class="carousel-caption futura">
 	      	<h1>Shine</h1>
 	      	<p>Ubisoft Academia Summer School 2013</p>
 	      </div>
@@ -33,7 +33,7 @@ title: Noah Dayan
 	      	  <img src="/img/cloth3.png" alt="cloth" width="350" class="center-block">
 	      	</li>
 	  	  </ul>
-	      <div class="carousel-caption">
+	      <div class="carousel-caption futura">
 	      	<h1>Computer Animation</h1>
 	      	<p>Implicit Integration and Constraints on Robust Large Step Cloth Simulation</p>
 	      </div>
@@ -49,14 +49,14 @@ title: Noah Dayan
 	          <img src="/img/hex4.png" alt="hex" width="460" class="center-block">
 	    	</li>
 	  	  </ul>
-	      <div class="carousel-caption">
+	      <div class="carousel-caption futura">
 	      	<h1>Computer Games</h1>
 	      	<p>Path-Finding and Procedural Map Generation on Hexagonal Tile Maps</p>
 	      </div>
 	    </div>
 	    <div class="item">
 	      <img src="/img/ros.png" alt="ros" width="790" class="center-block">
-	      <div class="carousel-caption">
+	      <div class="carousel-caption futura">
 	      	<h1>ROS Controller</h1>
 	      	<p>iOS Mobile Controller Application for ROS-Operated Robot</p>
 	      </div>
@@ -80,7 +80,7 @@ title: Noah Dayan
 		
 		<ul class="fa-ul">
 		{% for post in site.posts %}
-			<li><i class="fa-li fa fa-angle-right"></i><span class="courier">{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+			<li><i class="fa-li fa fa-angle-right"></i><span class="courier">{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}"><span class="futura">{{ post.title }}</span></a></li>
 		{% endfor %}
 		</ul>
 
