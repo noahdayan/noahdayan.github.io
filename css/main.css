@@ -8,6 +8,11 @@ body {
   padding-top: 50px;
 }
 
+.no-link, .no-link:hover{
+	color: inherit;
+	text-decoration: none;
+}
+
 .rockwell {
 	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
