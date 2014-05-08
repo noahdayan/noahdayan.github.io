@@ -23,7 +23,6 @@
 		var load_error = function(){
 			console.log('error');
 			$(player_box).find('.btn-play').addClass('disabled');
-			$(player_box).find('input[type="range"]').hide();
 			$(player_box).find('.fa-spin').text('Error');
 			$(player_box).find('.fa-spin').parent().attr('title', 'There was an error loading the audio.');
 			$(player_box).find('.fa-spin').parent().tooltip('fixTitle');
