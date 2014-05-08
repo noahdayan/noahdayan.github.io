@@ -17,6 +17,10 @@ body {
 	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 }
 
+.rockwell-medium {
+	font-size: large;
+}
+
 .rockwell-big {
 	font-size: x-large;
 }
