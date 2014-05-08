@@ -33,6 +33,7 @@
 			var play = document.createElement('a');
 				$(play).addClass('btn btn-default btn-play');
 			play.setPlayState = function(toggle){
+					$(play).removeClass('disabled');
 				if (toggle === 'play') {
 					$(play).html('<i class="fa fa-play"></i>');
 					$(play).click(function () {
