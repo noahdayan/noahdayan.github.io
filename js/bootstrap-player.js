@@ -22,7 +22,7 @@
 			$(player).addClass('btn-group btn-block btn-group-justified row-fluid');
 		var load_error = function(){
 			console.log('error');
-			$(player_box).find('.btn').addClass('disabled');
+			$(player_box).find('.btn-play').addClass('disabled');
 			$(player_box).find('input[type="range"]').hide();
 			$(player_box).find('.fa-spin').text('Error');
 			$(player_box).find('.fa-spin').parent().attr('title', 'There was an error loading the audio.');
@@ -31,9 +31,8 @@
 		};
 		var addPlay = function() {
 			var play = document.createElement('a');
-				$(play).addClass('btn btn-default disabled');
+				$(play).addClass('btn btn-default btn-play');
 			play.setPlayState = function(toggle){
-					$(play).removeClass('disabled');
 				if (toggle === 'play') {
 					$(play).html('<i class="fa fa-play"></i>');
 					$(play).click(function () {
@@ -285,10 +284,10 @@
 		};
 		var addAttribution = function() {
 			var attribution = document.createElement('small');
-				$(attribution).addClass('pull-right muted');
+				$(attribution).addClass('pull-right text-muted');
 			if (typeof($(song).data('infoAttLink')) !== 'undefined'){
 				var attribution_link = document.createElement('a');
-					$(attribution_link).addClass('muted');
+					$(attribution_link).addClass('text-muted');
 					$(attribution_link).attr('href', $(song).data('infoAttLink'));
 					$(attribution_link).html($(song).data('infoAtt'));
 				$(attribution).append(attribution_link);
