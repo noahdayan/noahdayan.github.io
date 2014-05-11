@@ -4,22 +4,19 @@
 		var song = this;
 			song.controls=false;
 		var player_box = document.createElement('div');
-			$(player_box).addClass($(song).attr('class') + ' well container-fluid playa');
+			$(player_box).addClass('player');
 		var data_sec = document.createElement('section');
 			$(data_sec).addClass('collapse');
-		var toggle_holder = document.createElement('div');
-			$(toggle_holder).addClass('btn-group btn-block row-fluid');
 		var data_toggle = document.createElement('a');
 			$(data_toggle).html('<i class="fa fa-bars"></i>');
 			$(data_toggle).addClass('btn btn-default btn-block');
 			$(data_toggle).click(function (){$(data_sec).collapse('toggle');});
 			$(data_toggle).attr('title', 'Details');
 			$(data_toggle).tooltip({'container': 'body', 'placement': 'top', 'html': true});
-			$(toggle_holder).append(data_toggle);
 		var data_table = document.createElement('table');
 			$(data_table).addClass('table table-condensed');
 		var player = document.createElement('section');
-			$(player).addClass('btn-group btn-block btn-group-justified row-fluid');
+			$(player).addClass('btn-group btn-group-justified');
 		var load_error = function(){
 			console.log('error');
 			$(player_box).find('.btn-play').addClass('disabled');
@@ -56,7 +53,7 @@
 					clearInterval(loadCheck);
 					return true;
 				}
-				if(song.networkState === 3 || timeout === 75){
+				if(song.networkState === 3 || timeout === 100){
 					load_error();
 					clearInterval(loadCheck);
 					return false;
@@ -101,11 +98,6 @@
 					}						
 				}
 				$(seek).css('background', '-webkit-linear-gradient(left, ' + bg + ')');
-				//These may be re-enabled when/if other browsers support the background like webkit
-				//$(seek).css('background','-o-linear-gradient(left,  ' + bg + ')');
-				//$(seek).css('background','-moz-linear-gradient(left,  ' + bg + ')');
-				//$(seek).css('background','-ms-linear-gradient(left,  ' + bg + ')');
-				//$(seek).css('background','linear-gradient(to right,  ' + bg + ')');
 				$(seek).css('background-color', '#ddd');
 			};
 			seek.set = function () {
@@ -247,7 +239,7 @@
 		};
 		var addAlbumArt = function() {
 			var albumArt = document.createElement('img');
-				$(albumArt).addClass('thumbnail');
+				$(albumArt).addClass('img-thumbnail');
 				$(albumArt).attr('src', $(song).data('infoAlbumArt'));
 			$(data_sec).append(albumArt);
 		};
@@ -270,7 +262,7 @@
 			if (typeof($(song).data('infoYear')) !== 'undefined'){ addInfo('Year', 'infoYear');}
 			if ($(data_table).html() !== ""){
 				$(data_sec).append(data_table);
-				$(player_box).append(toggle_holder);
+				$(player_box).append(data_toggle);
 				$(player_box).append(data_sec);
 			}
 		};
