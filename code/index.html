@@ -28,14 +28,6 @@ title: Code
 				<a href="#lightbox1" data-toggle="lightbox">
 					<img class="img-thumbnail center-block" src="/img/shine.jpg" alt="shine" width="500">
 				</a>
-				<div id="lightbox1" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="lightbox-dialog">
-						<div class="lightbox-content">
-							<img src="/img/shine.jpg">
-							<div class="lightbox-caption"><p>Shine</p></div>
-						</div>
-					</div>
-				</div>
 				<br><br>
 				<img class="img-thumbnail center-block" src="/img/shine.jpg" alt="shine" width="500">
 			</div>
@@ -47,9 +39,17 @@ title: Code
 		<br>
 		<div class="media well">
 			<div class="pull-right media-object">
-				<img class="img-thumbnail center-block" src="/img/cloth1.png" alt="cloth" width="500">
+				<a href="/img/cloth1.png" title="Cloth" data-gallery>
+					<img class="img-thumbnail center-block" src="/img/cloth1.png" alt="cloth" width="500">
+				</a>
 				<br><br>
-				<img class="img-thumbnail center-block" src="/img/cloth2.png" alt="cloth" width="500">
+				<a href="/img/cloth2.png" title="Cloth" data-gallery>
+					<img class="img-thumbnail center-block" src="/img/cloth2.png" alt="cloth" width="500">
+				</a>
+				<br><br>
+				<a href="/img/cloth3.png" title="Cloth" data-gallery>
+					<img class="img-thumbnail center-block" src="/img/cloth3.png" alt="cloth" width="500">
+				</a>
 			</div>
 			<div class="media-body">
 				<h3 id="project2" class="media-heading">Computer Animation</h3>
@@ -81,4 +81,48 @@ title: Code
 			</div>
 		</div>
 	</div>
+</div>
+
+<div id="lightbox1" class="lightbox fade"  tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="lightbox-dialog">
+		<div class="lightbox-content">
+			<img src="/img/shine.jpg">
+			<div class="lightbox-caption"><p>Shine</p></div>
+		</div>
+	</div>
+</div>
+
+<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
