@@ -15,7 +15,7 @@ title: Noah Dayan
 	  </ol>
 
 	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner">
+	  <div class="carousel-inner animated fadeIn">
 	    <div class="item active">
 	      <a href="/code/index.html#project1">
 	      	<img src="/img/shine.jpg" alt="shine" width="800" class="center-block">
@@ -80,13 +80,13 @@ title: Noah Dayan
 	  </a>
 	</div>
 
-	<div class="container animated fadeInDown">
+	<div class="container">
 
-		<div class="page-header">
+		<div class="page-header animated fadeInLeft">
 			<h1 class="rockwell">News</h1>
 		</div>
 		
-		<ul class="fa-ul">
+		<ul class="fa-ul animated fadeInUp">
 		{% for post in site.posts %}
 			<li><i class="fa-li fa fa-angle-right"></i><span class="courier">{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}"><span class="futura">{{ post.title }}</span></a></li>
 		{% endfor %}
