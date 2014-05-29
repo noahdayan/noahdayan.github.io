@@ -90,6 +90,11 @@
                 {% else %}
                 <li><a href="/music"><span class="rockwell"><i class="fa fa-music fa-fw"></i> Music</span></a></li>
                 {% endif %}
+                {% if page.title == "Photo" %}
+                <li class="active"><a href="/photo"><span class="text-primary rockwell"><i class="fa fa-camera fa-fw"></i> Photo</span></a></li>
+                {% else %}
+                <li><a href="/photo"><span class="rockwell"><i class="fa fa-camera fa-fw"></i> Photo</span></a></li>
+                {% endif %}
               </ul>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#" type="button" data-toggle="modal" data-target="#contact-modal"><span class="rockwell"><i class="fa fa-envelope fa-fw"></i> Contact</span></a></li>
@@ -119,7 +124,7 @@
                   <dd><a href="https://github.com/noahdayan" target="_blank">github.com/noahdayan</a></dd>
                   <dt>YouTube <i class="fa fa-youtube fa-fw"></i></dt>
                   <dd><a href="https://www.youtube.com/user/noahdayan" target="_blank">youtube.com/user/noahdayan</a></dd>
-                  <dt>SoundCloud <i class="fa fa-music fa-fw"></i></dt>
+                  <dt>SoundCloud <i class="fa fa-soundcloud fa-fw"></i></dt>
                   <dd><a href="https://soundcloud.com/noah-dayan" target="_blank">soundcloud.com/noah-dayan</a></dd>
                 </dl>
               </div>
