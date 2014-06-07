@@ -159,5 +159,13 @@
     <!-- Image Gallery JS -->
     <script src="/js/bootstrap-image-gallery.min.js"></script>
 
+    {% if page.title == "Photos" %}
+    <script>
+      $(function () {
+        $('#blueimp-gallery').data('useBootstrapModal', false);
+      });
+    </script>
+    {% endif %}
+
     </body>
 </html>
