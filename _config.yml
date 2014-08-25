@@ -2,3 +2,4 @@ name: Noah Dayan
 markdown: redcarpet
 pygments: true
 exclude: ["README.md"]
+timezone: America/Montreal
