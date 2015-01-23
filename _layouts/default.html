@@ -121,7 +121,7 @@
               <div class="modal-body">
                 <dl class="dl-horizontal futura">
                   <dt>Email <i class="fa fa-envelope fa-fw"></i></dt>
-                  <dd><a href="mailto:noahdayan@gmail.com">noahdayan@gmail.com</a></dd>
+                  <dd><a href="mailto:mail@noahdayan.com">mail@noahdayan.com</a></dd>
                   <dt>Facebook <i class="fa fa-facebook fa-fw"></i></dt>
                   <dd><a href="https://www.facebook.com/noahdayan" target="_blank">facebook.com/noahdayan</a></dd>
                   <dt>Twitter <i class="fa fa-twitter fa-fw"></i></dt>
@@ -158,21 +158,47 @@
     <script src="/js/bootstrap.min.js"></script>
     <!-- Smooth Scroll JS -->
     <script src="/js/smoothscroll.js"></script>
-    <!-- HTML5 Slider JS -->
-    <script src="/js/html5slider.js"></script>
-    <!-- Bootstrap Player JS -->
-    <script src="/js/bootstrap-player.js"></script>
     <!-- Lightbox JS -->
     <script src="/js/bootstrap-lightbox.min.js"></script>
     <!-- Gallery JS -->
     <script src="/js/jquery.blueimp-gallery.min.js"></script>
     <!-- Image Gallery JS -->
     <script src="/js/bootstrap-image-gallery.min.js"></script>
+    <!-- SoundCloud JS -->
+    <script src="/js/soundcloud-api.js"></script>
 
     {% if page.title == "Photos" %}
     <script>
       $(function () {
         $('#blueimp-gallery').data('useBootstrapModal', false);
+      });
+    </script>
+    {% endif %}
+
+    {% if page.title == "Music" %}
+    <script>
+      $(function() {
+        var widget = SC.Widget(document.getElementById('sc-widget'));
+
+        widget.bind(SC.Widget.Events.READY, function() {
+          $('.btn-play').html('<i class="fa fa-play"></i>');
+
+          $('.btn-play').click(function() {
+            widget.toggle();
+          });
+        });
+
+        widget.bind(SC.Widget.Events.PLAY, function() {
+          $('.btn-play').html('<i class="fa fa-pause"></i>');
+        });
+
+        widget.bind(SC.Widget.Events.PAUSE, function() {
+          $('.btn-play').html('<i class="fa fa-play"></i>');
+        });
+
+        widget.bind(SC.Widget.Events.ERROR, function() {
+          $('.btn-play').html('<i class="fa fa-ban"></i> Error');
+        });
       });
     </script>
     {% endif %}

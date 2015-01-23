@@ -1,5 +1,5 @@
 name: Noah Dayan
-markdown: redcarpet
-pygments: true
-exclude: ["README.md"]
+markdown: kramdown
+highlighter: pygments
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "CNAME"]
 timezone: America/Montreal

@@ -25,10 +25,40 @@ title: Music
 	<div id="music-project" class="jumbotron futura scroll-content" data-spy="scroll" data-target="#music-nav" data-offset="300">
 		<div class="media well">
 			<div class="pull-left media-object">
-				<audio controls data-info-album-art="/img/Rock.jpg" data-info-album-title="Stranded Jams" data-info-artist="Noah Dayan" data-info-title="Sunrise Kingdom" data-info-year="2012" data-info-label="Independent">
-					<source src="/audio/Sunrise_Kingdom.mp3" type="audio/mpeg">
-					<a href="/audio/Sunrise_Kingdom.mp3">Sunrise Kingdom</a>
-				</audio>
+				<iframe id="sc-widget" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/168734997%3Fsecret_token%3Ds-cikLc"></iframe>
+				<div class="player">
+					<a class="btn btn-default btn-block" data-toggle="collapse" data-target="#player-info"><i class="fa fa-bars"></i></a>
+					<section id="player-info" class="collapse">
+						<img class="img-thumbnail" src="/img/Rock.jpg">
+						<table class="table table-condensed">
+							<tbody>
+								<tr>
+									<th>Artist</th>
+									<td>Noah Dayan</td>
+								</tr>
+								<tr>
+									<th>Title</th>
+									<td>Sunrise Kingdom</td>
+								</tr>
+								<tr>
+									<th>Album</th>
+									<td>Stranded Jams</td>
+								</tr>
+								<tr>
+									<th>Label</th>
+									<td>Independent</td>
+								</tr>
+								<tr>
+									<th>Year</th>
+									<td>2012</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section class="btn-group btn-group-justified">
+						<a class="btn btn-default btn-play"><i class="fa fa-spinner fa-spin"></i></a>
+					</section>
+				</div>
 			</div>
 			<div class="media-body">
 				<h3 id="music1" class="media-heading">
