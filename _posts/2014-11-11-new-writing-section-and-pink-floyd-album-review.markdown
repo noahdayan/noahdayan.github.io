@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "New writing section and Pink Floyd album review"
-date:   2014-11-11 11:46:40
 ---
 
 The new writing section will showcase my published written work along with a brand new contribution, an album review of Pink Floyd's latest release _The Endless River_.

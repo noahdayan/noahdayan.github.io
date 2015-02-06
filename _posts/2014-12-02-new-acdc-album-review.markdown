@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "New AC/DC album review"
-date:   2014-12-02 17:12:14
 ---
 
 New contribution to The Link, an album review of AC/DC's latest release _Rock Or Bust_.
