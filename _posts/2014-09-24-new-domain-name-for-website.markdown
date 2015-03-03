@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "New domain name for website"
 ---
 

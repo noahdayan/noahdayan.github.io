@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Another article on The Link newspaper"
 ---
 

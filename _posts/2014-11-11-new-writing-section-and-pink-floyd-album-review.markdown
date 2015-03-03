@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "New writing section and Pink Floyd album review"
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "PassionSnack website revamped for discontinuation"
 ---
 

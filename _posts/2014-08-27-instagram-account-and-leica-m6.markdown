@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Instagram account and Leica M6"
 ---
 

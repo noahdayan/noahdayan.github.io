@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "First contribution to The Link newspaper"
 ---
 
