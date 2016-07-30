@@ -1,6 +1,6 @@
 name: Noah Dayan
 exclude: ["README.md", "Gemfile", "Gemfile.lock", "CNAME"]
-timezone: America/Montreal
+timezone: Europe/London
 
 gems:
   - jekyll-sitemap
