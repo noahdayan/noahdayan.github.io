@@ -5,36 +5,39 @@
 /*****************************************************************************/
 
 body {
-  padding-top: 50px;
+	padding-top: 150px;
 }
 
 .no-link, .no-link:hover{
 	color: inherit;
-	text-decoration: none;
-}
-
-.rockwell {
-	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-}
-
-.rockwell-medium {
-	font-size: large;
-}
-
-.rockwell-big {
-	font-size: x-large;
 }
 
 .futura {
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
-.courier {
-	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+.helvetica {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.logo {
-	margin-top: -0.5em;
+.title-medium {
+	font-size: large;
+}
+
+.title-big {
+	font-size: x-large;
+}
+
+.text-light {
+	font-weight: 300;
+}
+
+.font-grey {
+	color: #777;
+}
+
+.font-black {
+	color: #000;
 }
 
 /*****************************************************************************/
@@ -43,68 +46,41 @@ body {
 /*
 /*****************************************************************************/
 
-#project-carousel {
-	height: 450px;
-	background: #000;
+.section {
+	padding: 50px 0px;
 }
 
-.carousel-list {
-	max-height: 440px;
+.content {
+	padding: 50px 200px;
 }
 
-/*****************************************************************************/
-/*
-/* About
-/*
-/*****************************************************************************/
-
-
-
-/*****************************************************************************/
-/*
-/* Code
-/*
-/*****************************************************************************/
-
-#code-project {
-	overflow: auto;
-	height: 450px;
+.footer {
+	padding: 20px 0px;
 }
 
-/*****************************************************************************/
-/*
-/* Music
-/*
-/*****************************************************************************/
-
-#music-project {
-	overflow: auto;
-	height: 450px;
+.navbar-custom {
+	padding: 50px 0px;
+	background-color: transparent;
+	border-color: transparent;
 }
 
-.player {
-	width: 400px;
+.navbar-container {
+	padding: 0px 50px;
 }
 
-#sc-widget {
-	display: none;
+.line-spacer {
+	margin: 20px 0px;
+	border-top: 8px solid #777;
 }
 
-/*****************************************************************************/
-/*
-/* Photos
-/*
-/*****************************************************************************/
-
-#photo-project {
-	overflow: auto;
-	height: 450px;
+.background-grey {
+	background-color: #eee;
 }
 
-/*****************************************************************************/
-/*
-/* Contact
-/*
-/*****************************************************************************/
+.background-white {
+	background-color: #ddd !important;
+}
 
-
+.background-white:hover {
+	background-color: #fff !important;
+}

@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Noah Dayan - {{ page.title }}</title>
+        <title>Noah Dayan - Music Producer, Sound Engineer and Musician</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Noah Dayan's Personal Portfolio Website. Explore Code, Music, Photo and Writing projects.">
-        <meta name="keywords" content="Noah, Dayan, noahdayan, github, portfolio">
+        <meta name="description" content="Noah Dayan's Personal Portfolio Website. Music Producer, Sound Engineer and Musician.">
+        <meta name="keywords" content="Noah, Dayan, noahdayan, portfolio, music, sound, recording, mixing, sound engineer, music producer, musician, songwriter">
         <meta name="author" content="Noah Dayan">
 
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
@@ -16,21 +16,6 @@
 
         <!-- Font Awesome -->
         <link href="/css/font-awesome.min.css" rel="stylesheet">
-
-        <!-- Lightbox -->
-        <link href="/css/bootstrap-lightbox.min.css" rel="stylesheet">
-
-        <!-- Gallery -->
-        <link href="/css/blueimp-gallery.min.css" rel="stylesheet">
-
-        <!-- Image Gallery -->
-        <link href="/css/bootstrap-image-gallery.min.css" rel="stylesheet">
-
-        <!-- Animate -->
-        <link href="/css/animate.min.css" rel="stylesheet">
-
-        <!-- syntax highlighting CSS -->
-        <link href="/css/syntax.css" rel="stylesheet">
 
         <!-- Custom CSS -->
         <link href="/css/main.css" rel="stylesheet">
@@ -48,8 +33,8 @@
     <body>
 
         <!-- Fixed navbar -->
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container animated fadeIn">
+        <div class="navbar navbar-default navbar-custom navbar-fixed-top" role="navigation">
+          <div class="container navbar-container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -57,89 +42,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">
-                <img src="/img/ND_Logo.png" alt="Logo" class="logo" height="40">
-                <span class="rockwell rockwell-big">{{ site.name }}</span>
+              <a href="#title" class="navbar-brand smoothScroll background-white">
+                <span class="futura title-big">NOAH DAYAN</span>
               </a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                {% if page.title == "Home" %}
-                <li class="active"><a href="/"><span class="text-primary rockwell"><i class="fa fa-home fa-fw"></i> Home</span></a></li>
-                {% else %}
-                <li><a href="/"><span class="rockwell"><i class="fa fa-home fa-fw"></i> Home</span></a></li>
-                {% endif %}
-                {% if page.title == "About" %}
-                <li class="active"><a href="/about"><span class="text-primary rockwell"><i class="fa fa-info fa-fw"></i> About</span></a></li>
-                {% else %}
-                <li><a href="/about"><span class="rockwell"><i class="fa fa-info fa-fw"></i> About</span></a></li>
-                {% endif %}
-                {% if page.title == "Code" %}
-                <li class="active"><a href="/code"><span class="text-primary rockwell"><i class="fa fa-terminal fa-fw"></i> Code</span></a></li>
-                {% else %}
-                <li><a href="/code"><span class="rockwell"><i class="fa fa-terminal fa-fw"></i> Code</span></a></li>
-                {% endif %}
-                {% if page.title == "Music" %}
-                <li class="active"><a href="/music"><span class="text-primary rockwell"><i class="fa fa-music fa-fw"></i> Music</span></a></li>
-                {% else %}
-                <li><a href="/music"><span class="rockwell"><i class="fa fa-music fa-fw"></i> Music</span></a></li>
-                {% endif %}
-                {% if page.title == "Photos" %}
-                <li class="active"><a href="/photos"><span class="text-primary rockwell"><i class="fa fa-camera fa-fw"></i> Photos</span></a></li>
-                {% else %}
-                <li><a href="/photos"><span class="rockwell"><i class="fa fa-camera fa-fw"></i> Photos</span></a></li>
-                {% endif %}
-                {% if page.title == "Writings" %}
-                <li class="active"><a href="/writings"><span class="text-primary rockwell"><i class="fa fa-pencil fa-fw"></i> Writings</span></a></li>
-                {% else %}
-                <li><a href="/writings"><span class="rockwell"><i class="fa fa-pencil fa-fw"></i> Writings</span></a></li>
-                {% endif %}
-              </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" type="button" data-toggle="modal" data-target="#contact-modal"><span class="rockwell"><i class="fa fa-envelope fa-fw"></i> Contact</span></a></li>
+                <li><a href="#bio" class="smoothScroll background-white"><span class="futura">BIO</span></a></li>
+                <li><a href="#audio" class="smoothScroll background-white"><span class="futura">AUDIO</span></a></li>
+                <li><a href="#contact" class="smoothScroll background-white"><span class="futura">CONTACT</span></a></li>
               </ul>
             </div><!--/.nav-collapse -->
           </div>
         </div>
 
-        <div id="contact-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="contact-modal-label" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h2 class="modal-title rockwell" id="contact-modal-label">Contact</h2>
-              </div>
-              <div class="modal-body">
-                <dl class="dl-horizontal futura">
-                  <dt>Email <i class="fa fa-envelope fa-fw"></i></dt>
-                  <dd><a href="mailto:mail@noahdayan.com">mail@noahdayan.com</a></dd>
-                  <dt>Facebook <i class="fa fa-facebook fa-fw"></i></dt>
-                  <dd><a href="https://www.facebook.com/noahdayan" target="_blank">facebook.com/noahdayan</a></dd>
-                  <dt>Twitter <i class="fa fa-twitter fa-fw"></i></dt>
-                  <dd><a href="https://twitter.com/noahdayan" target="_blank">twitter.com/noahdayan</a></dd>
-                  <dt>LinkedIn <i class="fa fa-linkedin fa-fw"></i></dt>
-                  <dd><a href="http://www.linkedin.com/in/noahdayan" target="_blank">linkedin.com/in/noahdayan</a></dd>
-                  <dt>Github <i class="fa fa-github fa-fw"></i></dt>
-                  <dd><a href="https://github.com/noahdayan" target="_blank">github.com/noahdayan</a></dd>
-                  <dt>Instagram <i class="fa fa-instagram fa-fw"></i></dt>
-                  <dd><a href="http://instagram.com/noahdayan" target="_blank">instagram.com/noahdayan</a></dd>
-                  <dt>YouTube <i class="fa fa-youtube fa-fw"></i></dt>
-                  <dd><a href="https://www.youtube.com/user/noahdayan" target="_blank">youtube.com/user/noahdayan</a></dd>
-                  <dt>SoundCloud <i class="fa fa-soundcloud fa-fw"></i></dt>
-                  <dd><a href="https://soundcloud.com/noah-dayan" target="_blank">soundcloud.com/noah-dayan</a></dd>
-                </dl>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {{ content }}
 
-        <div class="container animated fadeIn">
+        <div class="container">
 
           <div class="footer">
-            <hr>
-            <p class="futura text-right"><small>Noah Dayan &copy; 2015</small></p>
+            <p class="futura font-grey text-center"><small>NOAH DAYAN &copy; 2016</small></p>
           </div>
 
         </div>
@@ -150,50 +72,6 @@
     <script src="/js/bootstrap.min.js"></script>
     <!-- Smooth Scroll JS -->
     <script src="/js/smoothscroll.js"></script>
-    <!-- Lightbox JS -->
-    <script src="/js/bootstrap-lightbox.min.js"></script>
-    <!-- Gallery JS -->
-    <script src="/js/jquery.blueimp-gallery.min.js"></script>
-    <!-- Image Gallery JS -->
-    <script src="/js/bootstrap-image-gallery.min.js"></script>
-    <!-- SoundCloud JS -->
-    <script src="/js/soundcloud-api.js"></script>
-
-    {% if page.title == "Photos" %}
-    <script>
-      $(function () {
-        $('#blueimp-gallery').data('useBootstrapModal', false);
-      });
-    </script>
-    {% endif %}
-
-    {% if page.title == "Music" %}
-    <script>
-      $(function() {
-        var widget = SC.Widget(document.getElementById('sc-widget'));
-
-        widget.bind(SC.Widget.Events.READY, function() {
-          $('.btn-play').html('<i class="fa fa-play"></i>');
-
-          $('.btn-play').click(function() {
-            widget.toggle();
-          });
-        });
-
-        widget.bind(SC.Widget.Events.PLAY, function() {
-          $('.btn-play').html('<i class="fa fa-pause"></i>');
-        });
-
-        widget.bind(SC.Widget.Events.PAUSE, function() {
-          $('.btn-play').html('<i class="fa fa-play"></i>');
-        });
-
-        widget.bind(SC.Widget.Events.ERROR, function() {
-          $('.btn-play').html('<i class="fa fa-ban"></i> Error');
-        });
-      });
-    </script>
-    {% endif %}
 
     </body>
 </html>
