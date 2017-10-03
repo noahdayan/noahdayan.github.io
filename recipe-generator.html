@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Noah Dayan - Music Producer, Sound Engineer and Musician</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Noah Dayan's Personal Portfolio Website. Music Producer, Sound Engineer and Musician.">
+        <meta name="keywords" content="Noah, Dayan, noahdayan, portfolio, music, sound, recording, mixing, sound engineer, music producer, musician, songwriter">
+        <meta name="author" content="Noah Dayan">
+
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+        <!-- Bootstrap -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="/css/main.css" rel="stylesheet">
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+
+        <div class="container">
+    		<div class="row">
+    			<div class="col-md-10 col-md-offset-1">
+    					
+                    <a id="recipeButton" class="btn btn-primary" href="#" role="button">Generate Recipe!</a>
+                    
+                    <div id="recipeName" class="text-center"></div>
+
+    			</div>
+    		</div>
+        </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Smooth Scroll JS -->
+    <script src="/js/smoothscroll.js"></script>
+
+    <script type="text/javascript">
+
+        var pickOne=function(e){
+            var n=e[Math.floor(Math.random()*e.length)];return n
+        };
+
+        function newRecipe(){
+
+            var C=["Beef","Chicken","Pork","Shrimps"],
+            h=pickOne(C),
+            l=["Brocoli","Cauliflower","Mushroom","Cabbage","Pakchoi","Bell Pepper","Celery","Onion","Bamboo shoot","Carrot"],
+            c=pickOne(l),
+            d=["Cashew Nuts","Peanuts","Almonds","Sesame Seeds","Chilis"],
+            g=pickOne(d),
+            u=["Rice","Noodles","Anything-solid","No Carbs Needed","No Carbs Needed"],
+            t=pickOne(u),
+            s=["Basil","Thai Basil","Mint","Coriander","Parsley","Spring Onions"],
+            n=pickOne(s),
+            e=["Mister","Miss","Colonnel","General","Chef","Lady","Old","Madam","King","Princess"],
+            i=pickOne(e),
+            o=["Wong","Wang","Zheng","Lin","Xu","Xie","Mao","Shen","Hu","Tan","He","Deng","Wu","Yang","Cheng","Gao","Wan","Xue","Kong","Dong","Pan","Yu"],
+            r=pickOne(o),
+            a="<h2>"+i+" "+r+"'s<br>"+h+", "+c+", "+g+", "+n+"<br>and "+t+" Stir-Fry !</h2>";
+
+            document.getElementById("recipeName").innerHTML=a
+        };
+
+        document.getElementById("recipeButton").onclick=function(){
+            newRecipe()
+        };
+
+    </script>
+
+    </body>
+</html>
