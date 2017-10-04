@@ -57,21 +57,25 @@
 
         function newRecipe(){
 
-            var C=["Beef","Chicken","Pork","Shrimps"],
-            h=pickOne(C),
-            l=["Brocoli","Cauliflower","Mushroom","Cabbage","Pakchoi","Bell Pepper","Celery","Onion","Bamboo shoot","Carrot"],
+            var m=["Beef","Chicken","Pork","Shrimp","Tofu","Tempeh","Natto","Salmon","Cod","Mackerel","Tuna"],
+            h=pickOne(m),
+            l=["Carrot","Leek","Mushroom","Cabbage","Pak Choi","Courgette","Celery","Onion","Kale","Spinach","Squash","Aubergine","Tomato"],
             c=pickOne(l),
-            d=["Cashew Nuts","Peanuts","Almonds","Sesame Seeds","Chilis"],
+            d=["Garlic","Ginger","Chives","Sesame Seed","Chilli Pepper","Caper","Anchovy","Olive"],
             g=pickOne(d),
-            u=["Rice","Noodles","Anything-solid","No Carbs Needed","No Carbs Needed"],
+            u=["Rice","Pasta","Soba","Udon","Potatoes","Barley","Salad"],
             t=pickOne(u),
-            s=["Basil","Thai Basil","Mint","Coriander","Parsley","Spring Onions"],
+            s=["Basil","Oregano","Mint","Coriander","Parsley","Thyme","Sage","Rosemary","Bay Leaf"],
             n=pickOne(s),
-            e=["Mister","Miss","Colonnel","General","Chef","Lady","Old","Madam","King","Princess"],
+            e=["Mister","Miss","Chef","Lady","Sir","Madam"],
             i=pickOne(e),
-            o=["Wong","Wang","Zheng","Lin","Xu","Xie","Mao","Shen","Hu","Tan","He","Deng","Wu","Yang","Cheng","Gao","Wan","Xue","Kong","Dong","Pan","Yu"],
+            o=["Dayan","Lugez","Flounder","Fin"],
             r=pickOne(o),
-            a="<h2>"+i+" "+r+"'s<br>"+h+", "+c+", "+g+", "+n+"<br>and "+t+" Stir-Fry !</h2>";
+            b=["Awesome","Amazing","Brilliant","Wonderful","Feel-Good","Genius","Random"],
+            j=pickOne(b),
+            p=["Salt & Pepper","Soy Sauce & Mirin","Miso","Dashi","Curry","Tomato Sauce","Chilli & Olive Oil","Honey & Mustard"],
+            k=pickOne(p),
+            a="<h2>"+i+" "+r+"'s "+j+"<br>"+h+", "+c+", "+g+", "+n+", "+k+"<br>and "+t+" Recipe!</h2>";
 
             document.getElementById("recipeName").innerHTML=a
         };
