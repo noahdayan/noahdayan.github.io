@@ -1,24 +1,26 @@
+---
+---
 var pickOne=function(e){
     var n=e[Math.floor(Math.random()*e.length)];return n
 };
 function newRecipe(){
-    var m=["Beef","Chicken","Pork","Shrimp","Tofu","Tempeh","Natto","Salmon","Cod","Mackerel","Tuna"],
+    var m={{site.data.recipes.protein}},
     h=pickOne(m),
-    l=["Carrot","Leek","Mushroom","Cabbage","Pak Choi","Courgette","Celery","Onion","Kale","Spinach","Squash","Aubergine","Tomato"],
+    l={{site.data.recipes.vegetable}},
     c=pickOne(l),
-    d=["Garlic","Ginger","Chives","Sesame Seed","Chilli Pepper","Caper","Anchovy","Olive"],
+    d={{site.data.recipes.spice}},
     g=pickOne(d),
-    u=["Rice","Pasta","Soba","Udon","Potatoes","Barley","Salad"],
+    u={{site.data.recipes.cereal}},
     t=pickOne(u),
-    s=["Basil","Oregano","Mint","Coriander","Parsley","Thyme","Sage","Rosemary","Bay Leaf"],
+    s={{site.data.recipes.herb}},
     n=pickOne(s),
-    e=["Mister","Miss","Chef","Lady","Sir","Madam"],
+    e={{site.data.recipes.title}},
     i=pickOne(e),
-    o=["Dayan","Lugez","Flounder","Fin"],
+    o={{site.data.recipes.lastname}},
     r=pickOne(o),
-    b=["Awesome","Amazing","Brilliant","Wonderful","Feel-Good","Genius","Random"],
+    b={{site.data.recipes.adjective}},
     j=pickOne(b),
-    p=["Salt & Pepper","Soy Sauce & Mirin","Miso","Dashi","Curry","Tomato Sauce","Chilli & Olive Oil","Honey & Mustard"],
+    p={{site.data.recipes.seasoning}},
     k=pickOne(p),
     a="<h2>"+i+" "+r+"'s "+j+"<br>"+h+", "+c+", "+g+", "+n+", "+k+"<br>and "+t+" Recipe!</h2>";
     document.getElementById("recipeName").innerHTML=a
