@@ -22,7 +22,7 @@ function generateRecipe(){
     j=pickOne(b),
     p=["{{ site.data.recipes.seasoning | join: '","' }}"],
     k=pickOne(p),
-    a="<h2>"+i+" "+r+"'s "+j+"<br>"+h+", "+c+", "+g+", "+n+", "+k+"<br>and "+t+" Recipe!</h2>";
+    a="<h2>"+i+" "+r+"'s "+j+"<br><span class='text-primary'>"+h+"</span>, <span class='text-success'>"+c+"</span>, <span class='text-danger'>"+g+"</span>, <span class='text-warning'>"+n+"</span>, <span class='text-muted'>"+k+"</span><br>and "+t+" Recipe!</h2>";
     document.getElementById("generateRecipeName").innerHTML=a
 };
 document.getElementById("generateRecipeButton").onclick=function(){
