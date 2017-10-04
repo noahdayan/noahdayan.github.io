@@ -1,1 +1,99 @@
+protein:
 
+  - Beef
+  - Chicken
+  - Pork
+  - Shrimp
+  - Tofu
+  - Tempeh
+  - Natto
+  - Salmon
+  - Cod
+  - Mackerel
+  - Tuna
+
+vegetable:
+
+  - Carrot
+  - Leek
+  - Mushroom
+  - Cabbage
+  - Pak Choi
+  - Courgette
+  - Celery
+  - Onion
+  - Kale
+  - Spinach
+  - Squash
+  - Aubergine
+  - Tomato
+
+spice:
+
+  - Garlic
+  - Ginger
+  - Chives
+  - Sesame Seed
+  - Chilli Pepper
+  - Caper
+  - Anchovy
+  - Olive
+
+cereal:
+
+  - Rice
+  - Pasta
+  - Soba
+  - Udon
+  - Potatoes
+  - Barley
+  - Salad
+
+herb:
+
+  - Basil
+  - Oregano
+  - Mint
+  - Coriander
+  - Parsley
+  - Thyme
+  - Sage
+  - Rosemary
+  - Bay Leaf
+
+title:
+
+  - Mister
+  - Miss
+  - Chef
+  - Lady
+  - Sir
+  - Madam
+
+lastname:
+
+  - Dayan
+  - Lugez
+  - Flounder
+  - Fin
+
+adjective:
+
+  - Awesome
+  - Amazing
+  - Brilliant
+  - Wonderful
+  - Feel-Good
+  - Genius
+  - Random
+
+seasoning:
+
+  - Salt & Pepper
+  - Soy Sauce & Mirin
+  - Miso
+  - Dashi
+  - Curry
+  - Tomato Sauce
+  - Chilli & Olive Oil
+  - Honey & Mustard
