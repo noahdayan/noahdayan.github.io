@@ -101,7 +101,9 @@ seasoning:
 recipename:
 
   - Pasta Carbonara
-  - Pizza
+  - Pizza Regina
+  - Pizza Anchovy Caper
+  - Pizza Rucola
   - Pasta Pesto
   - Pasta Bolognese
   - Pasta Napolitana
@@ -109,6 +111,7 @@ recipename:
   - Pasta Vongole
   - Lasagna
   - Hachis Parmentier
+  - Pate Chinois
   - Pasta Salmon Alfredo
   - Japanese Curry
   - Malagasy Curry
@@ -132,3 +135,19 @@ recipename:
   - Hamburger
   - Malagasy Cassoulet
   - Maki Zushi
+  - Ramen
+  - Quiche Lorraine
+  - Quiche aux Oignons
+  - Quiche aux Poireaux
+  - Quiche au Saumon
+  - Quiche aux Epinards
+  - Natto Chahan
+  - Natto Tarako Pasta
+  - Tabbouleh
+  - Chicken Fajita
+  - Burrito
+  - Blanquette de Veau
+  - Pasta Peas Panchetta
+  - Pasta Nicoise
+  - Kara Age
+  - Katsu Curry
