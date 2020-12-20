@@ -21,12 +21,12 @@
 
 .cooper-black-medium
 {
-	font-size: 28px;
+	font-size: 32px;
 }
 
 .cooper-black-big
 {
-	font-size: 40px;
+	font-size: 48px;
 }
 
 .no-link {
@@ -34,7 +34,7 @@
 }
 
 .no-link:hover {
-	color: #333;
+	color: #246179;
 	text-decoration: none;
 }
 
@@ -50,6 +50,18 @@ body {
 }
 
 .wrapper {
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #C23413;
+}
+
+.sub-wrapper {
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #F59C2F;
+}
+
+.sub-sub-wrapper {
 	padding-bottom: 20px;
 	border-radius: 20px;
 	background-color: #C4A373;
@@ -68,12 +80,12 @@ body {
 }
 
 .header-text {
-	color: #C23413;
-	white-space: nowrap;
+	color: #627C27;
+	/*white-space: nowrap;*/
 }
 
 .footer-text {
-	color: #C23413;
+	color: #627C27;
 }
 
 .section-title {
@@ -81,34 +93,35 @@ body {
 }
 
 .section-text {
-	color: #246179;
+	color: #854711;
 	overflow-wrap: break-word;
 }
 
 .background-header {
+	display: inline-block;
 	padding: 20px 40px;
 	border-radius: 20px;
 	background-color: #F59C2F;
-	box-shadow: -10px 10px #854711;
+	box-shadow: -10px 10px #C23413, -20px 20px #854711;
 }
 
 .background-photo {
 	padding: 15px 15px;
 	border-radius: 30px;
 	background-color: #F59C2F;
-	box-shadow: -15px 15px #854711;
+	box-shadow: -15px 15px #C23413, -30px 30px #854711;
 }
 
 .background-section {
 	padding: 30px 40px;
 	border-radius: 30px;
 	background-color: #F59C2F;
-	box-shadow: -15px 15px #854711;
+	box-shadow: -15px 15px #C23413, -30px 30px #854711;
 }
 
 .background-footer {
 	padding: 10px 20px;
 	border-radius: 10px;
 	background-color: #F59C2F;
-	box-shadow: -5px 5px #854711;
+	box-shadow: -5px 5px #C23413, -10px 10px #854711;
 }
