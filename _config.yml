@@ -1,10 +1,11 @@
 name: Noah Dayan
 exclude: ["README.md", "Gemfile", "Gemfile.lock", "CNAME"]
 timezone: Europe/London
+url: http://www.noahdayan.com
 
 s3url: https://s3.amazonaws.com/noahdayan
 
-gems:
+plugins:
   - jekyll-sitemap
 
 defaults:
